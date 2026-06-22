@@ -1,0 +1,77 @@
+{
+  "DLSVersion": "2.1.6",
+  "Name": "2RAM",
+  "NameLocation": 0,
+  "ChipType": 0,
+  "Size": {
+    "x": 0.725,
+    "y": 1.25
+  },
+  "Colour": {
+    "r": 0.247400627,
+    "g": 0.300141871,
+    "b": 0.3466974,
+    "a": 1
+  },
+  "InputPins":[
+    {
+      "Name":"ADDR1",
+      "ID":1947397579,
+      "Position":{
+        "x":-20.06306,
+        "y":31.88484
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"ADDR2",
+      "ID":1971345951,
+      "Position":{
+        "x":-20.06306,
+        "y":31.36984
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"DATA1",
+      "ID":943591798,
+      "Position":{
+        "x":-20.08272,
+        "y":30.4884
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"DATA2",
+      "ID":1863967896,
+      "Position":{
+        "x":-20.08272,
+        "y":29.9734
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"CLK",
+      "ID":1612030134,
+      "Position":{
+        "x":-20.11222,
+        "y":29.12146
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    }
+  ],
+  "OutputPins":[],
+  "SubChips":[],
+  "Wires":[],
+  "Displays": null
+}

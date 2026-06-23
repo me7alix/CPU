@@ -231,7 +231,6 @@ int main(int argc, char *argv[]) {
 		fprintf(stderr, "Usage: comp/sim ...\n");
 		return 1;
 	}
-
 	uint8_t code[4096] = {0};
 	size_t count = translate(code, fopen(argv[2], "r"));
 	if (strcmp(argv[1], "comp") == 0) {
@@ -239,14 +238,12 @@ int main(int argc, char *argv[]) {
 			fprintf(stderr, "Usage: [input.s] [output.b]\n");
 			return 1;
 		}
-
 		generate(code, count, fopen(argv[3], "w"));
 	} else if (strcmp(argv[1], "sim") == 0) {
 		if (argc != 4) {
 			fprintf(stderr, "Usage: [input.s] [nanos]\n");
 			return 1;
 		}
-
 		CPU cpu;
 		memset(cpu.RAM, 0, sizeof(cpu.RAM));
 		memcpy(cpu.PROG, code, sizeof(cpu.PROG));
@@ -254,7 +251,9 @@ int main(int argc, char *argv[]) {
 			exec1(&cpu);
 			usleep(atoi(argv[3]));
 		}
+	} else {
+		fprintf(stderr, "Usage: comp/sim ...\n");
+		return 1;
 	}
-
 	return 0;
 }
